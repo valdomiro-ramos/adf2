@@ -1,0 +1,9 @@
+{
+	"name": "adfAula",
+	"location": "brazilsouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3e53dd16-24ae-4ab0-a37d-50421c0a9a5d",
+		"tenantId": "7ef09e87-ffef-466f-b3c0-41f3173f210b"
+	}
+}

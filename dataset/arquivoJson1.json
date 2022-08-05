@@ -1,0 +1,130 @@
+{
+	"name": "arquivoJson1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "cidades.json",
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"nome": {
+					"type": "string"
+				},
+				"microrregiao": {
+					"type": "object",
+					"properties": {
+						"id": {
+							"type": "integer"
+						},
+						"nome": {
+							"type": "string"
+						},
+						"mesorregiao": {
+							"type": "object",
+							"properties": {
+								"id": {
+									"type": "integer"
+								},
+								"nome": {
+									"type": "string"
+								},
+								"UF": {
+									"type": "object",
+									"properties": {
+										"id": {
+											"type": "integer"
+										},
+										"sigla": {
+											"type": "string"
+										},
+										"nome": {
+											"type": "string"
+										},
+										"regiao": {
+											"type": "object",
+											"properties": {
+												"id": {
+													"type": "integer"
+												},
+												"sigla": {
+													"type": "string"
+												},
+												"nome": {
+													"type": "string"
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"regiao-imediata": {
+					"type": "object",
+					"properties": {
+						"id": {
+							"type": "integer"
+						},
+						"nome": {
+							"type": "string"
+						},
+						"regiao-intermediaria": {
+							"type": "object",
+							"properties": {
+								"id": {
+									"type": "integer"
+								},
+								"nome": {
+									"type": "string"
+								},
+								"UF": {
+									"type": "object",
+									"properties": {
+										"id": {
+											"type": "integer"
+										},
+										"sigla": {
+											"type": "string"
+										},
+										"nome": {
+											"type": "string"
+										},
+										"regiao": {
+											"type": "object",
+											"properties": {
+												"id": {
+													"type": "integer"
+												},
+												"sigla": {
+													"type": "string"
+												},
+												"nome": {
+													"type": "string"
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

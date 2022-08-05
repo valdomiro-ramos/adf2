@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "pipeline1_DB_JSON",
 	"properties": {
 		"description": "teste de pipeline",
 		"activities": [
@@ -35,7 +35,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DBAzureSqlTable1",
+						"referenceName": "DBAzureSqlTableCustomer",
 						"type": "DatasetReference"
 					}
 				],

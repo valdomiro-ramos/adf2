@@ -1,5 +1,5 @@
 {
-	"name": "DBAzureSqlTable1",
+	"name": "DBAzureSqlTableCustomer",
 	"properties": {
 		"description": "teste de conexao",
 		"linkedServiceName": {

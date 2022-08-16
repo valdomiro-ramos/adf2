@@ -1,5 +1,5 @@
 {
-	"name": "pipeline_postgree_datalake",
+	"name": "pipeline_postgree_cosmosDB",
 	"properties": {
 		"activities": [
 			{

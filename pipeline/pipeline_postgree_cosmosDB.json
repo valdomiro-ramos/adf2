@@ -24,7 +24,21 @@
 						"writeBehavior": "insert",
 						"disableMetricsCollection": false
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "productid",
+									"type": "Int32"
+								},
+								"sink": {
+									"path": "$"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{

@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "PostgreSqlSource",
-						"query": "select productid, name from production.product where productid = 1"
+						"query": "select productid, name from production.product where productid = 2"
 					},
 					"sink": {
 						"type": "CosmosDbSqlApiSink",

@@ -34,7 +34,7 @@
 									"type": "Int32"
 								},
 								"sink": {
-									"path": "$"
+									"path": "id"
 								}
 							}
 						]
